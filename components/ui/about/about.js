@@ -14,7 +14,7 @@ const About = () => {
     <p className="section_title"> I Know That <span>Good Development</span> <br/> Means <span>Good Business</span> </p>
     <div className={classes.cards}>
       {abouts.map((about, index)=>(
-        <AboutCard about={about}/>
+        <AboutCard about={about} key={index }/>
       ))}
         
       
