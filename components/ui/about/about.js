@@ -10,7 +10,11 @@ const About = () => {
     {title: 'MERN Stack', description: 'I am a frontend developer with a passion for creating beautiful web applications', imageUrl: 'images/about04.png'}
 ]
 
-  return <div className={`section-container ${classes.about} `}>
+  return (
+  <div className={classes.root}>
+
+  
+  <div className={`section-container ${classes.about} `}>
     <p className="section_title"> I Know That <span>Good Development</span> <br/> Means <span>Good Business</span> </p>
     <div className={classes.cards}>
       {abouts.map((about, index)=>(
@@ -20,7 +24,10 @@ const About = () => {
       
       
     </div>
-  </div>;
+  </div>
+  </div>
+  
+  );
 };
 
 export default About;

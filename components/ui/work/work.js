@@ -46,6 +46,7 @@ const clickHandle =(e, tab)=>{
         <div className={classes.cards}>
         {projectsList.map((project)=>(
             <motion.div
+            key={project.id}
             whileInView={{y:[100, 0], opacity:[0,1], transition:{duration:1, ease:'easeInOut'}}}
             viewport={{ once: true }}>
                <ProjectCard project={project} key={project.id}/> 
