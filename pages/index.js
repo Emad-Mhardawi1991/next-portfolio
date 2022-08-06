@@ -1,5 +1,6 @@
 import About from "../components/ui/about/about";
 import Hero from "../components/ui/hero/hero";
+import Skills from "../components/ui/skills/skills";
 import Work from "../components/ui/work/work";
 import classes from "../styles/Home.module.scss";
 
@@ -18,8 +19,11 @@ const projects =[
 ]
 
   return <div className={classes.home}>
-    <Hero/>
-   <About/>
-   <Work projects={projects}/>
+     <Hero/> 
+ <About/>
+   
+   <Work projects={projects}/> 
+   
+   <Skills/>
   </div>;
 }
